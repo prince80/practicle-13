@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Practicle-13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container
+        {
+            width: 100%;
+            padding: 15px;
+        }
+        header
+        {
+          color:grey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          height: 70px;
+          margin-bottom: 15px;;
+        }
+        footer
+        { border: 2px solid;
+            width: 100%;
+            height: 67vh;
+            background-color:#26272b;
+        }
+        footer::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        article
+        {
+           
+            
+            float: left;
+            width: 40%;
+            
+        }
+        article h3
+        {
+            color: white;
+            margin: 15px;
+            margin-bottom: 0px;
+        }
+        article p
+        {
+            color:grey;
+            margin-left: 15px;
+            
+        }
+        aside
+        {
+            float: right;
+            width: 60%;
+            /* height: 350px; */
+           
+            display: flex;
+            justify-content: space-evenly;
+            
+        
+        }
+      
+        aside section.sec-1 h3,section.sec-2 h3,section.sec-3 h3
+        {
+            color: white;
+            margin-top: 15px;
+            
+        }
+        aside section.sec-1,section.sec-2, ul
+        {
+            list-style: none;
+        }
+        aside section.sec-1,section.sec-2, ul li
+        {
+            color: grey;
+            margin-bottom: 10px;
+            
+        }
+      section.sec-3  i
+        {
+            color: grey;
+            display: inline-block;
+            margin-right:10px;
+            
+        }
+       
+        hr
+        {
+            width: 100% ;
+            background-color: black;
+            color: #17202A;
+            height: 3px;
+            border-style:solid;
+            
+            
+        }
+        h2
+        {
+            color:grey;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        h2 a
+        {
+            
+            border-radius: 20px;
+            background-color:red;
+            padding: 8px;
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+          text-transform: uppercase;
+
+        }
+        h2 a:hover
+        {
+            background-color:blue;
+            color: black;
+        }
+        section.sec-a
+        {
+            margin-top: 15px;
+            margin-left: 500px;
+          
+        }
+        section.sec-a i
+        {
+           font-size:30px;
+           color:grey;
+           background: #2e2f30;
+             padding:30px;
+             border-radius: 50%;
+             margin-right: 5px;
+            
+        }
+        section.sec-b article
+        {
+            margin-top: 25px;
+            background-color:black;
+            width: 100%;
+            height: 70px;
+
+        }
+        section.sec-b article h5
+        {
+            color:grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:25px;
+            
+        }
+       section.sec-a .fb:hover
+       {
+           background-color:blue;
+           color: white;
+       }
+       section.sec-a .twit:hover
+       {
+           background-color:#00acee;
+           color: white;
+       }
+       section.sec-a .goo:hover
+       {
+           background-color:#F4B400;
+           color: white;
+       }
+       section.sec-a .linked:hover
+       {
+           background-color:#0e76a8 ;
+           color: white;
+       }
+       section.sec-a .cho:hover
+       {
+           background-color:red ;
+           color: white;
+       }
+       h5
+       {
+           position: relative;
+           z-index: 1;
+       }
+       section.sec-b article h5::before,h5::after
+       {
+          content: '';
+         display: block;
+         width: 0px;
+         height: 3px;
+         background-color: yellow;
+         position: absolute;
+         transition: all 0.3s;
+       }
+       h5::before
+       {
+           left: 0px;
+           top: -10px;
+       }
+       h5::after
+       {
+           right: 590px;
+           bottom: -10px;
+       }
+       h5:hover::before,
+       h5:hover::after
+       {
+           width: 22%;
+       }
+
+      li:hover
+      {
+          color: orangered;
+      } 
+       
+    </style>
+</head>
+<body>
+  <div class="container">
+      <header>
+          Content Area
+      </header>
+      <footer>
+          <article>
+             <h3>ABOUT</h3>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ipsa animi corrupti alias aut, odit esse temporibus officiis perspiciatis fugit quasi consequatur vitae hic explicabo odio nobis laudantium dolorem repellat!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ipsa animi corrupti alias aut, odit esse temporibus officiis perspiciatis fugit quasi consequatur vitae hic explicabo odio nobis laudantium dolorem repellat!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, ipsa animi corrupti alias aut, odit esse temporibus officiis perspiciatis fugit quasi consequatur vitae hic explicabo odio nobis laudantium dolorem repellat!</p>
+
+          </article>
+          <aside>
+              <section class="sec-1">
+                  <h3>CATAGERIOUS</h3>
+                  <ul>
+                      <li>C</li>
+                      <li>Ul Design</li>
+                      <li>PHP</li>
+                      <li>Java</li>
+                      <li>Android</li>
+                      <li>Templates</li>
+                  </ul>
+              </section>
+              <section class="sec-2">
+                <h3>QUICK LINK</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Contribute</li>
+                    <li>Java</li>
+                    <li>Privacy Policy</li>
+                    <li>Sitemap</li>
+                </ul>
+            </section>
+            <section class="sec-3">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li>   <i class="fa fa-home" aria-hidden="true"></i>shamsabad agra</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>rathoreprince786@outlook.com</li>
+                    <li><i class="fa fa-tablet" aria-hidden="true">:</i>8755170639</li>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i>Prince rathore</li>
+                </ul>
+
+            </section>
+          </aside>
+          <hr>
+          <h2>Registration for Free <a href="#">SIGN UP!</a> </h2>
+          <hr>
+          <section class="sec-a">
+            <i class="fa fa-facebook fb" aria-hidden="true"></i>
+            <i class="fa fa-twitter twit" aria-hidden="true"></i>
+            <i class="fa fa-google goo" aria-hidden="true"></i>
+            <i class="fa fa-linkedin linked" aria-hidden="true"></i>
+            <i class="fa fa-chrome cho" aria-hidden="true"></i>
+            
+          
+        </section>
+        <section class="sec-b">
+            <article>
+                <h5>Copyright @ 2020 All Rights Reserved by Beta-Labs.</h5>
+            </article>
+        </section>
+           
+        
+       </footer>
+       
+      
+  </div>  
+</body>
+</html>
